@@ -1,6 +1,8 @@
-window.onclick =function playIntro(){
+window.onclick = function playIntro(){
     document.getElementById("intro").play();
     document.getElementById("achtergrondMuziek").play();
+    document.getElementById("titel").classList.add("hidden");
+
     this.onclick=null;
 }
 
@@ -10,8 +12,7 @@ document.getElementById("button1").onclick = function button1() {
 
   document.getElementById("video").pause();
   document.getElementById("video").classList.remove("hidden");
-  document.getElementById("button2").style.backgroundColor = null;
-  document.getElementById("button3").style.backgroundColor = null;
+  
 };
 
 function setVideo1() {
